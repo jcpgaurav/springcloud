@@ -17,7 +17,7 @@ public class EmployeeController {
 
 	@Autowired
 	private EmployeeService employeeService;
-   // to calll this service  http://localhost:8011/api/v1/empoyee/getAll
+   // to calll this service  http://localhost:8081/api/v1/employee/getAll
 	@GetMapping(value = "/getAll")
 	public List<Employee> getAll() {
 
