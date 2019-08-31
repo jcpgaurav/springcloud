@@ -4,7 +4,7 @@ Update :
 3.Centerlized spring cloud config server
 4.Spring cloud eurka server
 5.Spring zull api gateway
-
+6.Added Swagger .
 
 
 ****************************Order to run the boot application ******************************************************************************
@@ -82,4 +82,7 @@ http://localhost:8888/employee-micro-service/default
 http://localhost:8888/company-micro-service/default
 
 
+************************************ swagger ****************
+For Employee service
+http://localhost:8011/swagger-ui.html
 
