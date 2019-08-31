@@ -20,7 +20,7 @@ public class CompanyController {
 
 	// to calll this service http://localhost:8012/api/v1/company/get/HP
 	@GetMapping(value = "/get/{name}")
-	public List<Company> getCompanyDetails(@PathVariable String name) {
+	public Company getCompanyDetails(@PathVariable String name) {
 
 		return employeeService.getFindByName(name);
 	}

@@ -5,6 +5,7 @@ Update :
 4.Spring cloud eurka server
 5.Spring zull api gateway
 6.Added Swagger .
+7.call using rest template, ribbon rest template and fignclient , from employeee micro service to company micro service
 
 
 ****************************Order to run the boot application ******************************************************************************
@@ -60,20 +61,31 @@ http://localhost:8011/msg
 After the Zuul API Gate way implementeation 
 http://localhost:9999/ews/api/v1/employee/getAll
 
-
+3) http://localhost:8011/api/v1/employee/get/employee/10001
+from  API gatewasy
+http://localhost:9999/ews/api/v1/employee/get/employee/10001
+http://localhost:9999/ews/api/v1/employee/get/employee/10001
 
 ***************************************************** Company micro service **************************************
 http://localhost:8012/msg
 http://localhost:8012/api/v1/company/getAll
+http://localhost:8012/api/v1/company/get/HP
 
 After the Zuul API Gate way implementeation 
 http://localhost:9999/cws/api/v1/company/getAll
+http://localhost:9999/cws/api/v1/company/get/TechM
 
 
 ***************************************************** Eurkea  Server ************************************
 
 http://localhost:7777
 
+
+
+***************************************************** call using rest template, ribbon rest template and fignclient ************************************
+
+http://localhost:9999/ews/api/v1/employee/get/employee/10002
+http://localhost:9999/ews/api/v1/employee/get/employee/10001
 
 
 ***************************************************** Spring  Cloud Config  Server **********************

@@ -19,7 +19,7 @@ public class CompanyService {
 		return companyDao.findAll();
 	}	
 	
-	public List<Company> getFindByName(String name) {
+	public Company getFindByName(String name) {
 
 		return companyDao.findByName(name);
 	}
