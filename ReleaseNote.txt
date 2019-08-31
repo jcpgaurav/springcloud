@@ -81,7 +81,7 @@ http://localhost:9999/cws/api/v1/company/get/TechM
 http://localhost:7777
 
 
-
+****************************************communication from empoyee  micro service  to company mirco service   ************************************
 ***************************************************** call using rest template, ribbon rest template and fignclient ************************************
 
 http://localhost:9999/ews/api/v1/employee/get/employee/10002
