@@ -1,3 +1,12 @@
+Update : 
+1.sprinboot microservice (company, employee)
+2.H2 in memory database support
+3.Centerlized spring cloud config server
+4.Spring cloud eurka server
+5.Spring zull api gateway
+
+
+
 ****************************Order to run the boot application ******************************************************************************
 spring-cloud-config-server
 sprint-cloud-eureka-server
@@ -37,15 +46,11 @@ APIS call -->
 
 --------------------------------->
 
-API Repo-->
+GIT Repo-->
 
 https://github.com/jcpgaurav/springcloud
 
 https://github.com/jcpgaurav/springcloud.git
-
-Employee service 
-
-clone a git
 
 ***************************************************** Employee Micro Service **************************************
 Employee micro service
