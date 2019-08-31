@@ -1,0 +1,80 @@
+****************************Order to run the boot application ******************************************************************************
+spring-cloud-config-server
+sprint-cloud-eureka-server
+company-web-service
+employee-web-service
+spring-zuul-api-gateway
+
+************************************************Course service ---------------------------->
+
+http://localhost:8011/h2-console
+http://localhost:8011/api/v1/course/price/JPA
+
+via gateway--->
+
+http://localhost:8050/cc/api/v1/course/price/JPA
+spring.datasource.url=jdbc:h2:mem:courses;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+spring.datasource.platform=h2
+spring.datasource.username=root
+spring.datasource.password=root
+*******************************************************************************************
+***********************************************Todo service--------------------------->
+
+http://localhost:8003/h2-console
+http://localhost:8003/hello-world-bean
+
+via gateway--->
+
+http://localhost:8050/api/todo//hello-world-bean
+spring.datasource.url=jdbc:h2:mem:courses;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+spring.datasource.platform=h2
+spring.datasource.username=root
+spring.datasource.password=root
+*******************************************************************************************
+------------------------------------------>
+APIS call -->
+
+
+--------------------------------->
+
+API Repo-->
+
+https://github.com/jcpgaurav/springcloud
+
+https://github.com/jcpgaurav/springcloud.git
+
+Employee service 
+
+clone a git
+
+***************************************************** Employee Micro Service **************************************
+Employee micro service
+http://localhost:8011/api/v1/employee/getAll
+http://localhost:8011/msg
+
+After the Zuul API Gate way implementeation 
+http://localhost:9999/ews/api/v1/employee/getAll
+
+
+
+***************************************************** Company micro service **************************************
+http://localhost:8012/msg
+http://localhost:8012/api/v1/company/getAll
+
+After the Zuul API Gate way implementeation 
+http://localhost:9999/cws/api/v1/company/getAll
+
+
+***************************************************** Eurkea  Server ************************************
+
+http://localhost:7777
+
+
+
+***************************************************** Spring  Cloud Config  Server **********************
+Config server for --->
+http://localhost:8888/employee-micro-service/default
+http://localhost:8888/company-micro-service/default
+
+
+
